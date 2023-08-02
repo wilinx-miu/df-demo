@@ -1,8 +1,7 @@
 import { Input, Modal, message } from 'antd'
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { CloseOutlined } from '@ant-design/icons'
-
+// import { CloseOutlined } from '@ant-design/icons'
 
 let CryptoJS = require('crypto-js')
 
@@ -88,7 +87,7 @@ const ResetPassword: React.FC<Props> = ({ cancel, openModal, submit }) => {
       onCancel={cancel}
       width={'490px'}
       style={{ top: 230 }}
-      closeIcon={<CloseOutlined style={{ color: '#fff', fontSize: '10px' }} />}
+      // closeIcon={<CloseOutlined style={{ color: '#fff', fontSize: '10px' }} />}
       footer={footer}
     >
       <Content>
@@ -138,7 +137,7 @@ const ResetPassword: React.FC<Props> = ({ cancel, openModal, submit }) => {
 export default ResetPassword
 
 
-const RowContainer:any = styled.div`
+const RowContainer: any = styled.div`
   margin-top: ${(props: any) => props.top ? '0' : '40px'};
   width: 100%;
   display: flex;
